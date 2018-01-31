@@ -2,10 +2,18 @@ body {
 	height: 100vh;
 }
 
+.header {
+	align-items: center;
+}
+
 .btn {
 	margin: 3%;
 }
 
-.main-button {
-	margin: 10% 3%;
+.btn-success {
+	margin: 15% 0;
+}
+
+.footer {
+	align-items: flex-end;
 }
