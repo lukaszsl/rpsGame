@@ -1,5 +1,5 @@
 //new game button
-const newGameBtn = document.querySelector('#js-newGameBtn');
+const newGameBtn = document.querySelector('#js-newGameBtnElement');
 newGameBtn.addEventListener('click', newGame);
 
 //player selection
@@ -22,7 +22,6 @@ let player = {
 
 //display game elements
 const pickElem = document.querySelector('#js-playerPickElement'),
-			newGameElem = document.querySelector('#js-newGameBtnElement'),
 			resultsElem = document.querySelector('js-resultsTableElement');
 
 function setGameElements(gameState) {
