@@ -21,25 +21,29 @@
 			<button type="button" id="js-scissorsBtn" class="btn btn-danger w-25 h-50">Scissors</button>
 		</div>
 		<button type="button" id="js-newGameBtnElement" class="btn btn-success w-50 h-25 rounded-circle">New game</button>
+
 		<div id="js-resultsTableElement" class="container h-25">
-			<div class="d-flex justify-content-between h-25 px-5">
-				<div id="js-playerName" class="name d-flex align-items-center font-weight-bold">Player name</div>
-				<div id="js-computerName" class="name d-flex align-items-center font-weight-bold">Computer</div>
-			</div>
-			<div class="d-flex justify-content-around h-50">
-				<div id="js-playerPoints" class="points bg-light border rounded-circle border-dark w-25 h-100 d-flex justify-content-center align-items-center">0</div>
-				<div class="w-25 h-100 d-flex justify-content-center align-items-center">VS</div>
-				<div id="js-computerPoints" class="points bg-light border rounded-circle border-dark w-25 h-100 d-flex justify-content-center align-items-center">0</div>
-			</div>
-			<div class="d-flex justify-content-between h-25 px-5 mx-5 my-3">
-				<div id="js-playerPick" class="pick d-flex align-items-center">
-					<i class="far fa-handshake"></i>
-				</div>
-				<div id="js-computerPick" class="pick d-flex align-items-center">
-					<i class="far fa-handshake"></i>
-				</div>
-			</div>
-		</div>
+			<div class="d-flex justify-content-between h-100">
+	  		<div class="column1 w-25 h-100">
+	    		<div id="js-playerName" class="name text-center font-weight-bold h-25 text-nowrap">Player name</div>
+	    		<div id="js-playerPoints" class="points bg-light border rounded-circle border-dark w-100 h-50 d-flex justify-content-center align-items-center">0</div>
+	  		  <div id="js-playerPick" class="pick text-center h-25 w-100">
+			  		<i class="far fa-handshake"></i>
+					</div>
+	  		</div>
+	  		<div class="column2 w-50">
+	    		<div class="w-100 h-100 d-flex justify-content-center align-items-center">VS</div>
+	  		</div>
+				<div class="column3 w-25 h-100">
+	    		<div id="js-playerName" class="name text-center font-weight-bold h-25 text-nowrap">Computer</div>
+	    		<div id="js-playerPoints" class="points bg-light border rounded-circle border-dark w-100 h-50 d-flex justify-content-center align-items-center">0</div>
+	  		  <div id="js-playerPick" class="pick text-center h-25 w-100">
+			  		<i class="far fa-handshake"></i>
+					</div>
+	  		</div>
+  	</div>
+	</div>
+
 
 		<footer class="footer d-flex justify-content-center h-25 fixed-bottom">
 			<p>Created by Lukasz Sliczner</p>

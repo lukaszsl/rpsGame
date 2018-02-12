@@ -22,7 +22,10 @@ let player = {
 
 //display game elements
 const pickElem = document.querySelector('#js-playerPickElement'),
-			resultsElem = document.querySelector('#js-resultsTableElement');
+			resultsElem = document.querySelector('#js-resultsTableElement'),
+			playerNameElem = document.querySelector('#js-playerName');
+
+setGameElements('notStarted');
 
 function setGameElements(gameState) {
 	switch(gameState) {
@@ -41,12 +44,13 @@ function setGameElements(gameState) {
 	}
 }
 
-setGameElements('notStarted');
+
 
 function newGame() {
 	player.name = prompt('Please enter your name', 'player name');
 	if(player.name) {
 		player.score = computer.score = 0;
+		playerNameElem.innerHTML = player.name;
 	}
 	setGameElements('started');
 }
